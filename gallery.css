@@ -1,0 +1,35 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+}
+
+
+h1 {
+    font-size: 3.75rem;
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-size: 1.25rem;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 3fr);
+    padding: 1.25rem;
+}
+
+.icons {
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+    margin-right: 1rem;
+}
