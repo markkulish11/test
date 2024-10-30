@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bingo</title>
+    <link rel="stylesheet" href="bingo.css">
+</head>
+
+<body>
+    <div class="bingo-container">
+        <h1>Bingo</h1>
+        <div class="cards">
+            <h1>Player 1 Card</h1>
+            <div class="card" id="p1Card"></div>
+            <div class="card" id="p2Card"></div>
+            <h1>Player 2 Card</h1>
+        </div>
+        <div class="controls">
+            <button id="startButton">
+                Start
+            </button>
+            <button id="resetButton">
+                Reset
+            </button>
+        </div>
+        <div class="input">
+            <label for="numberInput">
+                Enter a Number (1-25):
+            </label>
+            <input type="number" id="numberInput" min="1" max="25" disabled>
+            <button id="markButton" disabled>
+                Mark
+            </button>
+        </div>
+        <div id="turnDisplay"></div>
+        <div id="winDisplay"></div>
+    </div>
+    <script src="bingo.js"></script>
+</body>
+
+</html>

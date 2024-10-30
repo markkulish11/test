@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="chess.css">
+</head>
+
+<body onload="setup()">
+    <h1>Chess</h1>
+    <p id="turnInfo">Player's Turn: <b>White</b></p>
+    <section id="board">
+        <div class="overlay" id="promotionMessage">
+            <div class="overlay-inner">
+                <span class="overlay-title">Promotion!</span>
+                <p class="overlay-text" id="alertText"></p>
+                <ul id="promotionList" class="white">
+                    <li><a href="#" class="promotion-button queen" onclick="promote('queen');"></a></li>
+                    <li><a href="#" class="promotion-button rook" onclick="promote('rook');"></a></li>
+                    <li><a href="#" class="promotion-button bishop" onclick="promote('bishop');"></a></li>
+                    <li><a href="#" class="promotion-button knight" onclick="promote('knight');"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay" id="errorMessage">
+            <div class="overlay-inner">
+                <span class="overlay-title">Error!</span>
+                <p class="overlay-text" id="errorText"></p>
+                <button class="overlay-button" onclick="closeError();">Close</button>
+            </div>
+        </div>
+    </section>
+    <script src="chess.js"></script>
+</body>
+
+</html>
