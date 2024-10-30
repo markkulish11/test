@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="reflex.css">
+</head>
+
+<body>
+    <center><h1>Reflex Game</h1></center>
+    <center><h2>Test your response time!</h2></center>
+    <center><h3>How to Play</h3>
+    <p>Click on "start" first, and wait till the background changes, as soon as it changes, press "stop"</p>
+    <br>
+    <form name="response">
+        Change background color to:
+        <select name="bgColorChange">
+            <option selected>deeppink
+            <option>aliceblue
+            <option>crimson
+            <option>darkkhaki
+            <option>cadetblue
+            <option>darkorchid
+            <option>coral
+            <option>chocolate
+            <option>mediumslateblue
+            <option>tomato
+            <option>darkslategray
+            <option>limegreen
+            <option>cornflowerblue
+            <option>darkolivegreen
+        </select><br>
+        <br>
+
+        <input type="button" class="btn" value="start" onclick="startIt()">
+        <input type="button" class="btn" value="stop" onclick="stopTest()">
+    </form>
+    </center>
+    <script src="reflex.js"></script>
+</body>
+
+</html>

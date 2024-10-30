@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="memory.css">
+    <title>Memory Game</title>
+</head>
+
+<body>
+    <h1>Memory Game</h1>
+    <div id="controls">
+        <label for="strict-mode">Strict Mode</label>
+        <input type="checkbox" id="strict-mode" onchange="toggleStrictMode()">
+    </div>
+    <div id="board">
+        <button class="button top-left" onclick="handleClick(this)" data-color = "1" disabled></button>
+        <button class="button top-right" onclick="handleClick(this)" data-color = "2" disabled></button>
+        <button class="button bottom-left" onclick="handleClick(this)" data-color = "3" disabled></button>
+        <button class="button bottom-right" onclick="handleClick(this)" data-color = "4" disabled></button>
+    </div>
+    <div id="level">
+        <span>Level:
+            <span class="level-count">-</span>
+        </span>
+    </div>
+    <button id="power-btn" onclick="togglePower()">Start</button>
+    <script src="memory.js"></script>
+</body>
+
+</html>
